@@ -129,7 +129,7 @@ html{
   color:#757575;
 }
 .main__currencies__date{
-  padding: 8px 0;
+  padding: 8px 5px;
   width: 200px;
   height: 31px;
   font-family: "inter", sans-serif;
@@ -137,7 +137,9 @@ html{
   background-color: var(--soft-orange);
   margin: 0 auto;
   border-radius: 8px;
-  text-align: center;
+  display: flex;
+  justify-self: center;
+  
   
 }
 .main__currencies__tables{
@@ -239,15 +241,32 @@ html{
 }
 
 .main__benefits{
-  position: relative;
-  width: 100%;
+  width: 100vw;
+  padding-top: 60px;
+  padding-bottom: 30px;
   height: auto;
+  position: relative;
   background-color: var(--black);
 }
+
+.main__benefits__batataIcon{
+  position: absolute;
+  background-image: url('/asset/imagenes/batatachips.svg');
+  width: 50px;
+  height: 30px;
+  background-repeat: none;
+  background-size: cover;
+  display: block;
+  top: -15px;
+  right: calc(50% - 25px);
+
+}
+
+
+}
 .main__benefits-slogan{
-  width: 288px;
-  height: 152px;
-  margin: 0 auto 20px auto;
+  min-width: 288px;
+  min-height: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -258,7 +277,6 @@ html{
   font-size: 2.4rem;
   line-height: 2.6rem;
   text-align: center;
-  margin: au;
   color: var(--just-white);
 }
 .main__benefits-slogan p{
@@ -266,6 +284,8 @@ html{
   font-weight: 500;
   font-size: 1.4rem;
   color: #808080;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .main__benefits-advantages{
@@ -294,11 +314,179 @@ html{
 .main_benefits-advantages-icon1{
   width: 30px;
   height: 30px;
-  background-image: url(/asset/iconos/clock.svg);
-  position: relative;
-  z-index: 1;
-  margin: 10px;
+  background-image: url('/asset/iconos/clock1.svg');
   background-repeat: none;
   background-position: center;
   background-size: cover;
+  margin-left: 10px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.main_benefits-advantages-icon2{
+  width: 30px;
+  height: 30px;
+  background-image: url('/asset/iconos/eye.svg');
+  background-repeat: none;
+  background-position: center;
+  background-size: cover;
+  margin-left: 10px;
+  margin-top: 10px;
+  display: inline-block;
+}
+.main_benefits-advantages-icon3{
+  width: 30px;
+  height: 30px;
+  background-image: url('/asset/iconos/dollar-sign\ 1.svg');
+  background-repeat: none;
+  background-position: center;
+  background-size: cover;
+  margin-left: 10px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.main_benefits-advantages-icon4{
+  width: 30px;
+  height: 30px;
+  background-image: url('/asset/iconos/check-circle.svg');
+  background-repeat: none;
+  background-position: center;
+  background-size: cover;
+  margin-left: 10px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.main__hero{
+  min-width: 320px;
+  width: 100vw;
+  height: auto;
+  max-height: 400px;
+}
+
+.main__hero-tittle{
+  min-width: 288px;
+  width: 100%;
+  height: 26px;
+  font-size: 2.4rem;
+  line-height: 2.6rem;
+  text-align: center;
+  font-weight: 700;
+  color: var(--just-white);
+  position: absolute;
+  z-index: 1;
+  margin-top: 65px;
+
+
+}
+.main__hero__img{
+  width: 100%;
+  height: 50vh;
+  background-image: url('/asset/imagenes/bitcoinbaby1.jpg');
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+  display: block;
+  position: relative;
+}
+
+.main__planes{
+  width: 100%;
+  height: auto;
+  padding: 60px 0;
+  background-color: #e5e5e5;
+
+}
+
+.main__planes-description{
+  min-width: 288px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.main__planes-description h2{
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 2.6rem;
+  margin-bottom: 24px;
+}
+
+.main__planes-description p{
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  margin-left: 15px;
+  margin-right: 15px;
+  color: #757575;
+}
+
+.main__planes__description-cards{
+  position: relative;
+  min-width: 190px;
+  width: 190px;
+  min-height: 247px;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+  text-align: center;
+  background-color: var(--just-white);
+}
+.planes__cards-option{
+  position: absolute;
+  display: block;
+  left: calc(50% - 50px);
+  top: -15px;
+  width: 100px;
+  min-width: 100px;
+  height: 31px;
+  border-radius: 8px;
+  background-color: var(--bitcoin-orange);
+  font-size: 1.2rem;
+  line-height: 15px;  
+  color: var(--just-white);
+  text-align: center;
+  padding: 8px;
+}
+
+.planes__cards-body{
+  width: 100%;
+  height: 100%;
+  padding-top: 30px;
+}
+.planes__cards-body h3{
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  margin-bottom: 10px;
+}
+.planes__price{
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 5.2rem;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.planes__dollar-icon{
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  position: absolute;
+  left: 50px;
+  top: 13px;
+}
+.planes__cards-guidance{
+  width: 160px;
+  height: 30px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  color: #757575;
+  margin: 0 auto;
+  font-family: 'inter', sans-serif;
 }
