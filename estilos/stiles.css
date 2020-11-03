@@ -394,6 +394,7 @@ html{
 .main__planes{
   width: 100%;
   height: auto;
+  position: relative;
   padding: 60px 0;
   background-color: #e5e5e5;
 
@@ -489,4 +490,52 @@ html{
   color: #757575;
   margin: 0 auto;
   font-family: 'inter', sans-serif;
+}
+.main__planes__button-selection{
+  min-width: 151px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 151px;
+  height: 48px;
+  margin-top: 15px;
+  border-radius: 4px;
+  background-color: #faf8f7;
+  border: 2px solid #F7931A;
+}
+
+.main__planes__button-selection button:hover{
+  cursor: pointer;
+
+}
+.main__planes__button-selection button{
+  width: 110px;
+  height: 100%;
+  font-weight: bold;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  text-align: center;
+  background-color: #faf8f7;
+  border: none;
+  display: inline-block;
+}
+.main__planes__button-icon{
+  width: 24px;
+  height: 24px;
+  background-image: url('/asset/iconos/arrow-right.svg');
+  display: inline-block;
+  margin-top: 10px;
+}
+.main__planes__card2{
+  position: absolute;
+  min-width: 190px;
+  width: 190px;
+  min-height: 247px;
+  margin: auto 0;
+  top: 212px;
+  left: -135px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+  background-color: var(--just-white);
+
 }
